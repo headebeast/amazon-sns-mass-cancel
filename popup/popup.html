@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon S&S Mass Cancel</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛒 S&S Mass Cancel</h1>
+    </header>
+
+    <!-- Status Panel -->
+    <div id="status-panel" class="panel">
+      <div id="page-status" class="status-indicator">
+        <span class="dot"></span>
+        <span class="text">Checking page...</span>
+      </div>
+    </div>
+
+    <!-- Subscription Count -->
+    <div id="count-panel" class="panel hidden">
+      <div class="count-display">
+        <span id="sub-count">0</span>
+        <span class="label">Subscriptions Found</span>
+      </div>
+    </div>
+
+    <!-- Progress Panel -->
+    <div id="progress-panel" class="panel hidden">
+      <div class="progress-header">
+        <span id="progress-text">Canceling...</span>
+        <span id="progress-numbers">0 / 0</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+      <div id="progress-details" class="progress-details"></div>
+    </div>
+
+    <!-- Results Panel -->
+    <div id="results-panel" class="panel hidden">
+      <div class="results-summary">
+        <div class="result-item success">
+          <span id="success-count">0</span>
+          <span class="label">Canceled</span>
+        </div>
+        <div class="result-item error">
+          <span id="error-count">0</span>
+          <span class="label">Failed</span>
+        </div>
+      </div>
+      <div id="error-list" class="error-list hidden"></div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="actions">
+      <button id="btn-scan" class="btn btn-secondary">
+        🔍 Scan Page
+      </button>
+      <button id="btn-cancel-all" class="btn btn-danger" disabled>
+        ❌ Cancel All
+      </button>
+    </div>
+
+    <!-- Instructions -->
+    <div id="instructions" class="instructions">
+      <p><strong>How to use:</strong></p>
+      <ol>
+        <li>Go to your <a href="https://www.amazon.com/auto-deliveries/subscriptionList?listFilter=active" target="_blank">S&S Subscriptions</a> page</li>
+        <li>Click "Show more" until all items are visible</li>
+        <li>Click <strong>Scan Page</strong> to find subscriptions</li>
+        <li>Click <strong>Cancel All</strong> to cancel them</li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

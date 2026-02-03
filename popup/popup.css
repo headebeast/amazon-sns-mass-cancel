@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e4e4e7;
+  min-width: 320px;
+  max-width: 360px;
+}
+
+.container {
+  padding: 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f4f4f5;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Status Indicator */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-indicator .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fbbf24;
+  animation: pulse 1.5s infinite;
+}
+
+.status-indicator.ready .dot {
+  background: #22c55e;
+  animation: none;
+}
+
+.status-indicator.error .dot {
+  background: #ef4444;
+  animation: none;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Count Display */
+.count-display {
+  text-align: center;
+}
+
+.count-display #sub-count {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.count-display .label {
+  font-size: 13px;
+  color: #a1a1aa;
+}
+
+/* Progress */
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-details {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #a1a1aa;
+  max-height: 60px;
+  overflow-y: auto;
+}
+
+/* Results */
+.results-summary {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.result-item {
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.result-item.success {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.result-item.error {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.result-item span:first-child {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.result-item.success span:first-child {
+  color: #22c55e;
+}
+
+.result-item.error span:first-child {
+  color: #ef4444;
+}
+
+.result-item .label {
+  font-size: 12px;
+  color: #a1a1aa;
+}
+
+.error-list {
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 8px;
+  font-size: 11px;
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e4e4e7;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  transform: translateY(-1px);
+}
+
+/* Instructions */
+.instructions {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.instructions p {
+  margin-bottom: 8px;
+}
+
+.instructions ol {
+  padding-left: 18px;
+}
+
+.instructions li {
+  margin-bottom: 4px;
+  color: #a1a1aa;
+}
+
+.instructions a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.instructions a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
