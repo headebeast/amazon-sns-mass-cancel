@@ -6,6 +6,10 @@
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
 
+<a href="https://ko-fi.com/YOUR_KOFI_USERNAME">
+  <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi">
+</a>
+
 ## The Problem
 
 Amazon Subscribe & Save is great for discounts, but managing dozens of subscriptions is tedious. Canceling them one-by-one takes forever, especially if you only wanted the discount and not the recurring delivery.
@@ -23,16 +27,44 @@ Amazon Subscribe & Save is great for discounts, but managing dozens of subscript
 
 ## 📦 Installation
 
-### From Source (Developer Mode)
+### Step-by-Step Download Guide
 
-1. **Download** this repository (click `Code` → `Download ZIP`, or clone it)
-2. **Unzip** if needed
-3. Open Chrome and go to `chrome://extensions/`
-4. Enable **Developer mode** (toggle in top-right corner)
-5. Click **Load unpacked**
-6. Select the `amazon-sns-mass-cancel` folder
+<details>
+<summary><strong>Click here for detailed instructions with screenshots</strong></summary>
 
-The extension icon will appear in your Chrome toolbar.
+#### Step 1: Download the Extension
+
+1. On this page, click the green **Code** button
+2. Click **Download ZIP**
+3. Save the ZIP file to your computer
+
+#### Step 2: Extract the ZIP
+
+1. Find the downloaded `amazon-sns-mass-cancel-master.zip` file
+2. Right-click → **Extract All** (Windows) or double-click (Mac)
+3. Remember where you extracted it
+
+#### Step 3: Install in Chrome
+
+1. Open Chrome and type `chrome://extensions/` in the address bar, then press Enter
+2. In the top-right corner, toggle **Developer mode** ON
+3. Click the **Load unpacked** button
+4. Navigate to the extracted folder and select `amazon-sns-mass-cancel-master`
+5. Click **Select Folder**
+
+#### Step 4: Pin the Extension (Optional)
+
+1. Click the puzzle piece icon 🧩 in Chrome's toolbar
+2. Find "Amazon S&S Mass Cancel" and click the pin 📌 icon
+
+</details>
+
+### Quick Install (For Developers)
+
+```bash
+git clone https://github.com/headebeast/amazon-sns-mass-cancel.git
+```
+Then load the folder as an unpacked extension in `chrome://extensions/`.
 
 ## 🚀 Usage
 
@@ -72,7 +104,7 @@ That's it! Watch the progress bar as each subscription is canceled.
 ### API Endpoint Used
 
 ```
-GET https://www.amazon.com/auto-deliveries/ajax/cancelSubscriptionAction
+GET https://www.amazon.{domain}/auto-deliveries/ajax/cancelSubscriptionAction
   ?actionType=cancelSubscription
   &canceledNextDeliveryDate={timestamp}
   &subscriptionId={id}
@@ -94,6 +126,14 @@ amazon-sns-mass-cancel/
     ├── icon48.png
     └── icon128.png
 ```
+
+## ☕ Support
+
+If this extension saved you time, consider buying me a coffee!
+
+<a href="https://ko-fi.com/YOUR_KOFI_USERNAME">
+  <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi">
+</a>
 
 ## 🤝 Contributing
 
