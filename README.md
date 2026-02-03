@@ -43,18 +43,13 @@ The extension icon will appear in your Chrome toolbar.
 
 That's it! Watch the progress bar as each subscription is canceled.
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-<details>
-<summary>Click to view screenshots</summary>
+<p align="center">
+  <img src="screenshots/progress.png" alt="Extension in action - canceling 66 subscriptions" width="320">
+</p>
 
-### Extension Popup
-The clean, dark-themed interface shows subscription count and cancel progress.
-
-### Progress View
-Real-time feedback as each subscription is processed.
-
-</details>
+*The extension showing real-time progress while canceling 66 subscriptions*
 
 ## ⚠️ Important Notes
 
