@@ -1,14 +1,31 @@
 {
     "manifest_version": 3,
     "name": "Amazon S&S Mass Cancel",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Mass cancel all Amazon Subscribe & Save subscriptions with one click",
     "permissions": [
         "activeTab",
         "scripting"
     ],
     "host_permissions": [
-        "https://www.amazon.com/*"
+        "https://www.amazon.com/*",
+        "https://www.amazon.co.uk/*",
+        "https://www.amazon.ca/*",
+        "https://www.amazon.de/*",
+        "https://www.amazon.fr/*",
+        "https://www.amazon.it/*",
+        "https://www.amazon.es/*",
+        "https://www.amazon.co.jp/*",
+        "https://www.amazon.in/*",
+        "https://www.amazon.com.br/*",
+        "https://www.amazon.com.mx/*",
+        "https://www.amazon.com.au/*",
+        "https://www.amazon.nl/*",
+        "https://www.amazon.se/*",
+        "https://www.amazon.pl/*",
+        "https://www.amazon.sg/*",
+        "https://www.amazon.ae/*",
+        "https://www.amazon.sa/*"
     ],
     "action": {
         "default_popup": "popup/popup.html",
@@ -26,7 +43,24 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.amazon.com/auto-deliveries/*"
+                "https://www.amazon.com/auto-deliveries/*",
+                "https://www.amazon.co.uk/auto-deliveries/*",
+                "https://www.amazon.ca/auto-deliveries/*",
+                "https://www.amazon.de/auto-deliveries/*",
+                "https://www.amazon.fr/auto-deliveries/*",
+                "https://www.amazon.it/auto-deliveries/*",
+                "https://www.amazon.es/auto-deliveries/*",
+                "https://www.amazon.co.jp/auto-deliveries/*",
+                "https://www.amazon.in/auto-deliveries/*",
+                "https://www.amazon.com.br/auto-deliveries/*",
+                "https://www.amazon.com.mx/auto-deliveries/*",
+                "https://www.amazon.com.au/auto-deliveries/*",
+                "https://www.amazon.nl/auto-deliveries/*",
+                "https://www.amazon.se/auto-deliveries/*",
+                "https://www.amazon.pl/auto-deliveries/*",
+                "https://www.amazon.sg/auto-deliveries/*",
+                "https://www.amazon.ae/auto-deliveries/*",
+                "https://www.amazon.sa/auto-deliveries/*"
             ],
             "js": [
                 "content/extractor.js"

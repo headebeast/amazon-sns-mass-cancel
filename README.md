@@ -15,6 +15,7 @@ Amazon Subscribe & Save is great for discounts, but managing dozens of subscript
 ## ✨ Features
 
 - 🚀 **One-Click Mass Cancel** — Cancel all subscriptions at once
+- 🌍 **International Support** — Works on all Amazon sites (US, UK, CA, DE, FR, JP, AU, etc.)
 - 📊 **Real-Time Progress** — Watch the progress bar as each item is canceled
 - ⚡ **Direct API Calls** — No popup spam, no new tabs
 - 🛡️ **Rate Limit Protection** — Built-in delays to avoid Amazon blocks
@@ -55,7 +56,10 @@ That's it! Watch the progress bar as each subscription is canceled.
 
 - **Emails**: Amazon sends a confirmation email for each canceled subscription. Expect inbox activity.
 - **Irreversible**: Cancellations cannot be undone. You'll need to re-subscribe manually if needed.
-- **US Only**: Currently only works on `amazon.com` (US site).
+
+### Supported Amazon Sites
+
+🇺🇸 US | 🇬🇧 UK | 🇨🇦 Canada | 🇩🇪 Germany | 🇫🇷 France | 🇮🇹 Italy | 🇪🇸 Spain | 🇯🇵 Japan | 🇮🇳 India | 🇧🇷 Brazil | 🇲🇽 Mexico | 🇦🇺 Australia | 🇳🇱 Netherlands | 🇸🇪 Sweden | 🇵🇱 Poland | 🇸🇬 Singapore | 🇦🇪 UAE | 🇸🇦 Saudi Arabia
 
 ## 🛠️ Technical Details
 

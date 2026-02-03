@@ -44,7 +44,7 @@ class PopupController {
         try {
             const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
-            if (tab.url && tab.url.includes('amazon.com/auto-deliveries')) {
+            if (tab.url && /amazon\.[a-z.]+\/auto-deliveries/.test(tab.url)) {
                 this.setStatus('ready', 'Ready - S&S page detected');
             } else {
                 this.setStatus('error', 'Navigate to S&S page first');
@@ -222,7 +222,9 @@ function extractSubscriptionIds() {
  */
 async function cancelSubscription(subscriptionId) {
     const cancelDate = Date.now();
-    const url = `https://www.amazon.com/auto-deliveries/ajax/cancelSubscriptionAction?actionType=cancelSubscription&canceledNextDeliveryDate=${cancelDate}&subscriptionId=${subscriptionId}`;
+    // Get the base URL from the current page (works for any Amazon domain)
+    const baseUrl = window.location.origin;
+    const url = `${baseUrl}/auto-deliveries/ajax/cancelSubscriptionAction?actionType=cancelSubscription&canceledNextDeliveryDate=${cancelDate}&subscriptionId=${subscriptionId}`;
 
     try {
         const response = await fetch(url, {
