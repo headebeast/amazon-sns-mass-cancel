@@ -99,11 +99,10 @@ body {
 .title-line2 {
   font-size: 18px;
   font-weight: 800;
-  color: #7dd3a8;
-  -webkit-text-stroke: 1.5px #4abe91;
-  text-shadow: 2px 2px 0 white;
+  color: #38a169;
+  text-shadow: 1px 1px 0 white;
   line-height: 1.15;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 /* Panels */
