@@ -103,10 +103,6 @@ Contributions are welcome! Feel free to:
 
 **All Rights Reserved** — Personal use only. See [LICENSE](LICENSE) for details.
 
-## 🙏 Credits
-
-Inspired by [this Reddit post](https://www.reddit.com/r/Frugal/) about the frustration of managing Subscribe & Save subscriptions.
-
 ---
 
 **Disclaimer**: This is an unofficial tool and is not affiliated with Amazon. Use at your own risk.
