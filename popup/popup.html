@@ -29,23 +29,23 @@
       </div>
     </div>
 
-    <!-- Status Panel -->
-    <div id="status-panel" class="panel">
-      <div id="page-status" class="status-indicator">
-        <span class="dot"></span>
-        <span class="text">Checking page...</span>
-      </div>
-    </div>
-
-    <!-- Subscription Count -->
-    <div id="count-panel" class="panel hidden">
+    <!-- Subscription Count (main display) -->
+    <div id="count-panel" class="panel count-panel">
       <div class="sparkle sparkle-1">✦</div>
       <div class="sparkle sparkle-2">✦</div>
       <div class="sparkle sparkle-3">✧</div>
       <div class="sparkle sparkle-4">✧</div>
       <div class="count-display">
-        <span id="sub-count">0</span>
+        <span id="sub-count">—</span>
         <span class="label">Subscriptions Found</span>
+      </div>
+    </div>
+
+    <!-- Status Panel (small, below count) -->
+    <div id="status-panel" class="panel status-panel">
+      <div id="page-status" class="status-indicator">
+        <span class="dot"></span>
+        <span class="text">Checking page...</span>
       </div>
     </div>
 
@@ -94,7 +94,7 @@
       <a href="https://ko-fi.com/hedidev" target="_blank" class="btn-donate">☕ Support</a>
     </div>
 
-    <!-- Instructions (initially hidden) -->
+    <!-- Instructions -->
     <div id="instructions" class="instructions">
       <p><strong>How to use:</strong></p>
       <ol>

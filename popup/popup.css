@@ -99,9 +99,11 @@ body {
 .title-line2 {
   font-size: 18px;
   font-weight: 800;
-  color: #6bcf9f;
-  text-shadow: 2px 2px 0 white, -1px -1px 0 #a8e6cf;
-  line-height: 1.1;
+  color: #7dd3a8;
+  -webkit-text-stroke: 1.5px #4abe91;
+  text-shadow: 2px 2px 0 white;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
 }
 
 /* Panels */
@@ -113,6 +115,14 @@ body {
   margin-bottom: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: relative;
+}
+
+.status-panel {
+  padding: 10px 14px;
+}
+
+.count-panel {
+  padding: 20px 16px;
 }
 
 .hidden {

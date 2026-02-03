@@ -78,7 +78,6 @@ class PopupController {
 
             if (ids.length > 0) {
                 this.elements.subCount.textContent = ids.length;
-                this.elements.countPanel.classList.remove('hidden');
                 this.elements.btnCancelAll.disabled = false;
                 this.setStatus('ready', `Found ${ids.length} subscription(s)`);
                 this.elements.instructions.classList.add('hidden');
