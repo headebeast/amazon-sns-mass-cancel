@@ -6,7 +6,7 @@
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
 
-<a href="https://ko-fi.com/YOUR_KOFI_USERNAME">
+<a href="https://ko-fi.com/hedidev">
   <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi">
 </a>
 
@@ -131,7 +131,7 @@ amazon-sns-mass-cancel/
 
 If this extension saved you time, consider buying me a coffee!
 
-<a href="https://ko-fi.com/YOUR_KOFI_USERNAME">
+<a href="https://ko-fi.com/hedidev">
   <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi">
 </a>
 
