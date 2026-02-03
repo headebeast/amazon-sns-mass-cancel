@@ -65,8 +65,15 @@ header h1 {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
 }
 
 /* Count Display */
@@ -252,4 +259,23 @@ header h1 {
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 2px;
+}
+
+/* Donate Link */
+.donate-link {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-top: 4px;
+  color: #fbbf24;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.donate-link:hover {
+  background: rgba(251, 191, 36, 0.1);
+  color: #fcd34d;
 }
