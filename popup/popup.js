@@ -21,8 +21,7 @@ class PopupController {
             countPanel: document.getElementById('count-panel'),
             subCount: document.getElementById('sub-count'),
             progressPanel: document.getElementById('progress-panel'),
-            progressText: document.getElementById('progress-text'),
-            progressNumbers: document.getElementById('progress-numbers'),
+            progressPct: document.getElementById('progress-pct'),
             progressFill: document.getElementById('progress-fill'),
             progressDetails: document.getElementById('progress-details'),
             resultsPanel: document.getElementById('results-panel'),
@@ -148,8 +147,8 @@ class PopupController {
     }
 
     updateProgress(current, total, detail) {
-        const percent = (current / total) * 100;
-        this.elements.progressNumbers.textContent = `${current} / ${total}`;
+        const percent = Math.round((current / total) * 100);
+        this.elements.progressPct.textContent = `${percent}%`;
         this.elements.progressFill.style.width = `${percent}%`;
         this.elements.progressDetails.textContent = detail;
     }

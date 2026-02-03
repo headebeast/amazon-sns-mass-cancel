@@ -5,14 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazon S&S Mass Cancel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <h1>🛒 S&S Mass Cancel</h1>
-    </header>
+    <!-- Decorative Elements -->
+    <div class="decor cat-1">🐱</div>
+    <div class="decor cat-2">🐱</div>
+    <div class="decor cat-3">🐱</div>
+    <div class="decor heart-1">💗</div>
+    <div class="decor heart-2">💗</div>
+    <div class="decor star-1">⭐</div>
+    <div class="decor star-2">✨</div>
+
+    <!-- Header -->
+    <div class="header-card">
+      <div class="header-icon">📦</div>
+      <div class="header-text">
+        <span class="title-line1">Amazon S&S</span>
+        <span class="title-line2">Mass Cancel</span>
+      </div>
+    </div>
 
     <!-- Status Panel -->
     <div id="status-panel" class="panel">
@@ -24,6 +39,10 @@
 
     <!-- Subscription Count -->
     <div id="count-panel" class="panel hidden">
+      <div class="sparkle sparkle-1">✦</div>
+      <div class="sparkle sparkle-2">✦</div>
+      <div class="sparkle sparkle-3">✧</div>
+      <div class="sparkle sparkle-4">✧</div>
       <div class="count-display">
         <span id="sub-count">0</span>
         <span class="label">Subscriptions Found</span>
@@ -35,13 +54,16 @@
       <div class="warning-banner">
         ⚠️ Keep this popup open until complete!
       </div>
-      <div class="progress-header">
-        <span id="progress-text">Canceling...</span>
-        <span id="progress-numbers">0 / 0</span>
+      <div class="progress-section">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <div class="progress-percent">
+          <span class="clock-icon">🕐</span>
+          <span id="progress-pct">0%</span>
+        </div>
       </div>
-      <div class="progress-bar">
-        <div id="progress-fill" class="progress-fill"></div>
-      </div>
+      <div class="progress-label">Progress</div>
       <div id="progress-details" class="progress-details"></div>
     </div>
 
@@ -60,17 +82,19 @@
       <div id="error-list" class="error-list hidden"></div>
     </div>
 
-    <!-- Action Buttons -->
-    <div class="actions">
-      <button id="btn-scan" class="btn btn-secondary">
-        🔍 Scan Page
-      </button>
-      <button id="btn-cancel-all" class="btn btn-danger" disabled>
-        ❌ Cancel All
-      </button>
+    <!-- Action Button -->
+    <button id="btn-cancel-all" class="btn-cancel" disabled>
+      <span class="btn-icon">🗑️</span>
+      <span class="btn-text">Cancel All</span>
+    </button>
+
+    <!-- Secondary Actions -->
+    <div class="secondary-actions">
+      <button id="btn-scan" class="btn-secondary">🔍 Scan Page</button>
+      <a href="https://ko-fi.com/hedidev" target="_blank" class="btn-donate">☕ Support</a>
     </div>
 
-    <!-- Instructions -->
+    <!-- Instructions (initially hidden) -->
     <div id="instructions" class="instructions">
       <p><strong>How to use:</strong></p>
       <ol>
@@ -81,11 +105,6 @@
         <li>Click <strong>Cancel All</strong> to cancel them</li>
       </ol>
     </div>
-
-    <!-- Donate -->
-    <a href="https://ko-fi.com/hedidev" target="_blank" class="donate-link">
-      ☕ Buy me a coffee
-    </a>
   </div>
 
   <script src="popup.js"></script>
