@@ -4,7 +4,7 @@
 
 ![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green?logo=googlechrome)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![License](https://img.shields.io/badge/License-Proprietary-red)
 
 ## The Problem
 
@@ -101,7 +101,7 @@ Contributions are welcome! Feel free to:
 
 ## 📄 License
 
-MIT License — do whatever you want with it.
+**All Rights Reserved** — Personal use only. See [LICENSE](LICENSE) for details.
 
 ## 🙏 Credits
 
